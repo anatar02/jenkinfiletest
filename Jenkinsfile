@@ -266,7 +266,7 @@ pipeline {
         stage('Collect Reports') {
             steps {
                 echo "Reports directory: ${workspace}/target/view"
-                zip dir: "${workspace}/target", zipFile: "$reportZipFile" // Create a zip file of content in the workspace
+                //zip dir: "${workspace}/target", zipFile: "$reportZipFile" // Create a zip file of content in the workspace
             }
         }
 
